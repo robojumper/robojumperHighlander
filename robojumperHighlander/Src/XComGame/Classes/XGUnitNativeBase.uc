@@ -1529,7 +1529,7 @@ private function SpawnAndConfigureNewProjectile(Actor ProjectileTemplate,
 {
 	local X2UnifiedProjectile NewProjectile;
 	// robojumperHighlander: Account for subclasses
-	NewProjectile = X2UnifiedProjectile(Spawn(ProjectileTemplate.Class, self, , , , ProjectileTemplate));
+	NewProjectile = Spawn(class<X2UnifiedProjectile>(ProjectileTemplate.Class), self, , , , ProjectileTemplate);
 	NewProjectile.ConfigureNewProjectile(CurrentFireAction, InVolleyNotify, AbilityContext, InSourceWeapon);
 	NewProjectile.GotoState('Executing');
 	if (CurrentFireAction != none)

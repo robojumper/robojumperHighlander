@@ -1920,12 +1920,12 @@ reliable client event ClientPlayForceFeedbackWaveform(ForceFeedbackWaveform FFWa
 		return; // don't play forcefeedback if gamepad isn't being used
 	}
 
-	if( ForceFeedbackManager != None && PlayerReplicationInfo != None && IsForceFeedbackAllowed() )
+	if( ForceFeedbackManager != None && PlayerReplicationInfo != None && IsForceFeedbackAllowed() && class'robojumperRumbleStack'.static.GetRumbleStack() != none)
 	{
-		ForceFeedbackManager.PlayForceFeedbackWaveform(FFWaveform,FFWaveformInstigator);
+		class'robojumperRumbleStack'.static.GetRumbleStack().AddWaveForm(FFWaveform);
+		//ForceFeedbackManager.PlayForceFeedbackWaveform(FFWaveform,FFWaveformInstigator);
 	}
 }
-
 
 
 simulated private function StopCommLink()

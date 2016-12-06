@@ -173,13 +173,3 @@ static function AddAdditionalPauseMenuEntries(out array<UIPauseMenuEntry> Entrie
 {
 
 }
-
-/// <summary>
-/// robojumperHighlander: Called from XGStrategy:StartingFromTactical state code and
-/// X2TacticalGameRuleset:CreateTacticalGame state code
-/// allows mods to add additional matinee maps for Dropship interiors
-/// </summary>
-static function string GetAdditionalDropshipMatineeMaps()
-{
-
-}

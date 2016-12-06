@@ -4,6 +4,10 @@ class robojumperHighlander extends Object abstract;
 
 var array<name> NativeTargetStyles;
 
+var bool bUseRumble;
+
+var array<string> AdditionalDropshipInteriorMatinees;
+
 
 static function robojumperHighlander GetConfig()
 {
@@ -31,4 +35,6 @@ defaultproperties
 	NativeTargetStyles[12]="X2AbilityTarget_Path"
 	NativeTargetStyles[13]="X2AbilityTarget_Self"
 	NativeTargetStyles[14]="X2AbilityTarget_Single"
+
+	bUseRumble = true;
 }

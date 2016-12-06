@@ -11,7 +11,7 @@ var ForceFeedbackWaveform OurWaveform;
 
 static function robojumperRumbleStack GetRumbleStack()
 {
-	// how?
+	// how
 }
 
 
@@ -23,6 +23,7 @@ function AddWaveForm(ForceFeedbackWaveform Waveform)
 	PlayingWaveForms.AddItem(Container);
 }
 
+// TODO: When to remove all?
 function RemoveWaveForm(ForceFeedbackWaveform Waveform)
 {
 	local int i;

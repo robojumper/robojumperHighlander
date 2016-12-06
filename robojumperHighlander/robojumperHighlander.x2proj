@@ -46,16 +46,7 @@
     <Content Include="Src\XComGame\Classes\UIStrategyMapItem_Mission.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\XComGame\Classes\UITacticalHUD.uc">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Src\XComGame\Classes\X2Ability_DefaultAbilitySet.uc">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Src\XComGame\Classes\X2BodyPartTemplateManager.uc">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Src\XComGame\Classes\X2CharacterTemplate.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\XComGame\Classes\X2DownloadableContentInfo.uc">
@@ -65,6 +56,15 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\XComGame\Classes\X2Effect_Persistent.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XComGame\Classes\X2TacticalGameRuleset.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XComGame\Classes\X2UnifiedProjectile.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XComGame\Classes\XComAlienPawn.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\XComGame\Classes\XComGameState_Ability.uc">
@@ -82,7 +82,7 @@
     <Content Include="Src\XComGame\Classes\XComPlayerController.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\XComGame\Classes\XGPlayer.uc">
+    <Content Include="Src\XComGame\Classes\XGStrategy.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\XComGame\Classes\XGUnitNativeBase.uc">
