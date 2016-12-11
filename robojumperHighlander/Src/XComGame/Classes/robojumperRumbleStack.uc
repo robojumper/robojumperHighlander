@@ -12,6 +12,16 @@ var ForceFeedbackWaveform OurWaveform;
 static function robojumperRumbleStack GetRumbleStack()
 {
 	// how
+	// oh well
+	local robojumperRumbleStack Stack;
+	local WorldInfo WI;
+	
+	WI = class'WorldInfo'.static.GetWorldInfo();
+	foreach WI.AllActors(class'robojumperRumbleStack', Stack)
+	{
+		return Stack;
+	}
+	return WI.Spawn(class'robojumperRumbleStack');
 }
 
 

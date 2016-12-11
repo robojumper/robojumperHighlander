@@ -83,7 +83,7 @@ protected static function int GetStrengthForSample(int iStrength, EWaveformFunct
 		case WF_Sin0to90:
 			return iStrength * Sin(fProgress * (Pi / 2));
 		case WF_Sin90to180:
-			return iStrength * Sin((fProgress * (Pi / 2)) + (Pi / 2));
+			return iStrength * Sin((fProgress + 1.0) * (Pi / 2));
 		case WF_Sin0to180:
 			return iStrength * Sin(fProgress * Pi);
 		case WF_Noise:

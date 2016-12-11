@@ -1927,6 +1927,7 @@ reliable client event ClientPlayForceFeedbackWaveform(ForceFeedbackWaveform FFWa
 	}
 }
 
+// robojumperHighlander: We can't really stop waveforms 
 
 simulated private function StopCommLink()
 {

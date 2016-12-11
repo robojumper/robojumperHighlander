@@ -10,8 +10,6 @@
 
 class X2DownloadableContentInfo_robojumperHighlander extends X2DownloadableContentInfo;
 
-var ForceFeedbackWaveform TestForm;
-
 /// <summary>
 /// This method is run if the player loads a saved game that was created prior to this DLC / Mod being installed, and allows the 
 /// DLC / Mod to perform custom processing in response. This will only be called once the first time a player loads a save that was
@@ -145,31 +143,5 @@ static function OnPreBodyPartTemplatesCreated(out array<X2PartInfo> BodyPartTemp
 /// </summary>
 static function AddAdditionalPauseMenuEntries(out array<UIPauseMenuEntry> Entries)
 {
-	Entries.AddItem(class'UIPauseMenu'.static.CreatePauseMenuEntry("Achievements", OnViewAchievements));
-}
 
-static function OnViewAchievements()
-{
-	class'WorldInfo'.static.GetWorldInfo().ConsoleCommand("ViewAchievements");
-}
-
-exec function TestRumble()
-{
-	local robojumperRumbleStack TheStack;
-
-	TheStack = class'WorldInfo'.static.GetWorldInfo().Spawn(class'robojumperRumbleStack');
-	TheStack.AddWaveForm(TestForm);
-	//class'WorldInfo'.static.GetWorldInfo().GetALocalPlayerController().ForceFeedbackManager.PlayForceFeedbackWaveform(TestForm, none);
-	
-}
-
-defaultproperties
-{
-	Begin Object Class=ForceFeedbackWaveform Name=ForceFeedbackWaveform0
-		Samples(0)=(LeftAmplitude=100,RightAmplitude=100,LeftFunction=WF_LinearIncreasing,RightFunction=WF_LinearIncreasing,Duration=10)
-		Samples(1)=(LeftAmplitude=100,RightAmplitude=100,LeftFunction=WF_LinearIncreasing,RightFunction=WF_LinearIncreasing,Duration=10)
-		bIsLooping=true
-	End Object
-
-	TestForm=ForceFeedbackWaveform0
 }

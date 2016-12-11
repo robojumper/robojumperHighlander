@@ -306,8 +306,8 @@ function GenerateTooltip( string tooltipHTML )
 	{
 		TooltipID = Movie.Pres.m_kTooltipMgr.AddNewTooltipTextBox(tooltipHTML, 15, 0, string(MCPath), , false, , true, , , , , , 0.0 /*no delay*/);
 		m_iTooltipDataIndex = TooltipID;
-		CachedTooltipId = TooltipID;
 		// robojumperHighlander: Fix Tooltips
+		//CachedTooltipId = TooltipID;
 		Movie.Pres.m_kTooltipMgr.TextTooltip.SetUsePartialPath(TooltipID, true);
 		bHasTooltip = true;
 	}
